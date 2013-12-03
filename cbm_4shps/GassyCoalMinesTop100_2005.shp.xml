@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Energy Information Administration</origin>
+				<pubdate>20070917</pubdate>
+				<title>CoalMineMethane__Top100gassyCoalMines_EPA2005</title>
+				<geoform Sync="TRUE">vector digital data</geoform>
+				<pubinfo>
+					<pubplace>Dallas, TX</pubplace>
+					<publish>Energy Information Administration (EIA), Reserves and Production Division</publish>
+				</pubinfo>
+				<onlink>http://www.eia.doe.gov/pub/oil_gas/natural_gas/analysis_publications/maps/maps.htm#Top</onlink>
+				<ftname Sync="TRUE">GassyCoalMinesTop100_2005</ftname></citeinfo>
+		</citation>
+		<descript>
+			<abstract>Top 100 Gassy active coal mines in the United States. Source is the EPA's INVENTORY OF U.S. GREENHOUSE GAS EMISSIONS AND SINKS: 1990-2005 (April 2007), USEPA #430-R-07-002
+</abstract>
+			<purpose>To map the gassiest coal mines, enabling comparison to CBM development areas by basin.</purpose>
+			<supplinf>The locations of the coal mines are from a variety of sources, mostly MSHA and USGS. They have not been checked for accuracy.
+
+No warranty, expressed or implied, is made by the author, by Z Inc. or by EIA regarding data accuracy, precision, currency or completeness; or concerning the results to be obtained from queries or use of the data. All data is expressly provided "AS IS" and "WITH FAULTS". The purpose of this dataset is to show the approximate location of coalbed methane fields. This layer is based on well data provided by individual organizations and state entities, which was not checked for accuracy or completeness. No responsibility is assumed for damages or other liabilities due to the accuracy, availability, use or misuse of the information herein provided. The GIS data is made available as a public service. GIS information is in the public domain and may be copied without permission; citation of the source is appreciated.</supplinf>
+			<langdata Sync="TRUE">en</langdata></descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>20070917</caldate>
+				</sngdate>
+			</timeinfo>
+			<current>20051231</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>As needed</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc Sync="TRUE">-110.729167</westbc>
+				<eastbc Sync="TRUE">-78.978982</eastbc>
+				<northbc Sync="TRUE">40.923173</northbc>
+				<southbc Sync="TRUE">33.279528</southbc>
+			</bounding>
+			<lboundng><leftbc Sync="TRUE">-110.729167</leftbc><rightbc Sync="TRUE">-78.978982</rightbc><bottombc Sync="TRUE">33.279528</bottombc><topbc Sync="TRUE">40.923173</topbc></lboundng></spdom>
+		<keywords>
+			<theme>
+				<themekt>REQUIRED: Reference to a formally registered thesaurus or a similar authoritative source of theme keywords.</themekt>
+				<themekey>coalbed methane</themekey>
+				<themekey>natural gas</themekey>
+				<themekey>coal mine</themekey>
+				<themekey>specific emissions</themekey>
+			</theme>
+			<theme>
+				<themekt>ISO 19115 Topic Category</themekt>
+				<themekey>coalbed</themekey>
+				<themekey>geoscientificInformation</themekey>
+				<themekey>naturalGas</themekey>
+			</theme>
+			<place>
+				<placekt>None</placekt>
+				<placekey>United States</placekey>
+			</place>
+		</keywords>
+		<accconst>None.</accconst>
+		<useconst>None. Please check sources, scale, accuracy, currentness and other available information. Please confirm that you are using the most recent copy of both data and metadata.  Acknowledgement of the EIA would be appreciated.</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Energy Information Administration</cntorg>
+					<cntper>Sam Limerick</cntper>
+				</cntorgp>
+				<cntpos>GIS Analyst</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>1999 Bryan St</address>
+					<address>ste 1110</address>
+					<city>Dallas</city>
+					<state>TX</state>
+					<postal>75201</postal>
+				</cntaddr>
+				<cntemail>samuel.limerick@eia.doe.gov</cntemail>
+				<cntinst>http://www.eia.doe.gov/</cntinst>
+			</cntinfo>
+		</ptcontac>
+		<secinfo>
+			<secsys>FIPS Pub 199</secsys>
+			<secclass>No Confidentiality</secclass>
+			<sechandl>Standard Technical Controls</sechandl>
+		</secinfo>
+		<native Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.2.2.1350</native>
+		<natvform Sync="TRUE">Shapefile</natvform></idinfo>
+	<dataqual>
+		<complete>Features represented have not been tested for completeness</complete>
+		<posacc>
+			<horizpa>
+				<horizpar>No accuracy tests were performed.</horizpar>
+			</horizpa>
+		</posacc>
+		<lineage>
+			<procstep>
+				<procdesc>Dataset copied.</procdesc>
+				<srcused>D:\CoalBedMethane\USGS_CBM\Tully96study\USA_Wide_Coal_Basins\CoalBasins_mrg_6_23</srcused>
+			</procstep>
+			<procstep>
+				<procdesc>Dataset copied.</procdesc>
+				<srcused></srcused>
+			</procstep>
+			<procstep>
+				<procdesc>Dataset copied.</procdesc>
+				<srcused></srcused>
+			</procstep>
+			<procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">C:\DOCUME~1\slk\LOCALS~1\Temp\xml69.tmp</srcused><date Sync="TRUE">20070919</date><time Sync="TRUE">09542000</time></procstep><procstep><procdesc Sync="TRUE">Dataset moved.</procdesc><srcused Sync="TRUE">C:\CoalBedMethane\2006_Update_wells_outlines\Shps_to_Distribute\CMM_2005_top100_UTM12</srcused><date Sync="TRUE">20071017</date><time Sync="TRUE">07481600</time></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE"></srcused><date Sync="TRUE">20071017</date><time Sync="TRUE">08401500</time></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">C:\CoalBedMethane\2006_Update_wells_outlines\Shps_to_Distribute\test_unzip\GassyCoalMinesTop100_2005</srcused><date Sync="TRUE">20071017</date><time Sync="TRUE">19321100</time></procstep></lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct Sync="TRUE">Vector</direct>
+		<ptvctinf>
+			<sdtsterm Name="GassyCoalMinesTop100_2005">
+				<sdtstype Sync="TRUE">Entity point</sdtstype>
+				<ptvctcnt Sync="TRUE">100</ptvctcnt>
+			</sdtsterm>
+			<esriterm Name="GassyCoalMinesTop100_2005"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Point</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">100</efeacnt><spindex Sync="TRUE">TRUE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<geodetic>
+				<horizdn Sync="TRUE">North American Datum of 1927</horizdn>
+				<ellips Sync="TRUE">Clarke 1866</ellips>
+				<semiaxis Sync="TRUE">6378206.400000</semiaxis>
+				<denflat Sync="TRUE">294.978698</denflat>
+			</geodetic>
+			<cordsysn><geogcsn Sync="TRUE">GCS_North_American_1927</geogcsn></cordsysn><geograph><geogunit Sync="TRUE">Decimal degrees</geogunit><latres Sync="TRUE">0.000000</latres><longres Sync="TRUE">0.000000</longres></geograph></horizsys>
+	</spref>
+	<eainfo>
+		<detailed Name="GassyCoalMinesTop100_2005">
+			<enttyp>
+				<enttypl Sync="TRUE">GassyCoalMinesTop100_2005</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">100</enttypc></enttyp>
+			<attr>
+				<attrlabl>FID</attrlabl>
+				<attrdef>Internal feature number.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>Shape</attrlabl>
+				<attrdef>Feature geometry.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+			</attr>
+			<attr><attrlabl Sync="TRUE">MSHA_ID05</attrlabl><attalias Sync="TRUE">MSHA_ID05</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">17</attwidth><attrdef>Mining Safety and Health Administration Mine number</attrdef><attrdefs>EPA</attrdefs></attr><attr><attrlabl Sync="TRUE">MINENM_05</attrlabl><attalias Sync="TRUE">MINENM_05</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">28</attwidth><attrdef>Mine name, 2005</attrdef><attrdefs>EPA</attrdefs></attr><attr><attrlabl Sync="TRUE">ST_05</attrlabl><attalias Sync="TRUE">ST_05</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">7</attwidth><attrdef>State</attrdef><attrdefs>EPA</attrdefs></attr><attr><attrlabl Sync="TRUE">CONM05</attrlabl><attalias Sync="TRUE">CONM05</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">34</attwidth><attrdef>Company Name (2005)</attrdef><attrdefs>EPA</attrdefs></attr><attr><attrlabl Sync="TRUE">VENTFANEMI</attrlabl><attalias Sync="TRUE">VENTFANEMI</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">17</attwidth><attrdef>Ventilation Fan Emissions (MMCF/day) emitted to atmosphere, 2005</attrdef><attrdefs>EPA</attrdefs></attr><attr><attrlabl Sync="TRUE">DEGASEMIS0</attrlabl><attalias Sync="TRUE">DEGASEMIS0</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">15</attwidth><attrdef>Degas Emissions (MMCF/day) captured for sale or use, 2005</attrdef><attrdefs>EPA</attrdefs></attr><attr><attrlabl Sync="TRUE">TOTMETHLIB</attrlabl><attalias Sync="TRUE">TOTMETHLIB</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">14</attwidth><attrdef>Total Methane Liberated (MMCF/day)= Ventilation + Degas, 2005</attrdef><attrdefs>EPA</attrdefs></attr><attr><attrlabl Sync="TRUE">COALPRDO5</attrlabl><attalias Sync="TRUE">COALPRDO5</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">16</attwidth><attrdef>Coal Production (tons) 2005</attrdef><attrdefs>EPA</attrdefs></attr><attr><attrlabl Sync="TRUE">SPECEMIS05</attrlabl><attalias Sync="TRUE">SPECEMIS05</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">12</attwidth><attrdef>Specific Emissions (total CF gas emiss/ton coal mined), 2005</attrdef><attrdefs>EPA</attrdefs></attr><attr><attrlabl Sync="TRUE">SPECEMISRN</attrlabl><attalias Sync="TRUE">SPECEMISRN</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">16</attwidth><attrdef>Rank of Specific Emissions (1-100), 2005</attrdef><attrdefs>EPA</attrdefs></attr><attr><attrlabl Sync="TRUE">DEGASTYPE0</attrlabl><attalias Sync="TRUE">DEGASTYPE0</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">62</attwidth><attrdef>Type of Degasification System Used, 2005</attrdef><attrdefs>EPA</attrdefs></attr><attr><attrlabl Sync="TRUE">METHUTL05</attrlabl><attalias Sync="TRUE">METHUTL05</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">14</attwidth><attrdef>Methane Utilization, 2005</attrdef><attrdefs>EPA</attrdefs></attr><attr><attrlabl Sync="TRUE">PCT__DEGAS</attrlabl><attalias Sync="TRUE">PCT__DEGAS</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">13</attwidth><attrdef>Percent of Degas Used, 2005</attrdef><attrdefs>EPA</attrdefs></attr><attr><attrlabl Sync="TRUE">SOURCE</attrlabl><attalias Sync="TRUE">SOURCE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">20</attwidth><attrdef>Source for location</attrdef><attrdefs>EIA</attrdefs></attr><attr><attrlabl Sync="TRUE">CMM_Recov</attrlabl><attalias Sync="TRUE">CMM_Recov</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">20</attwidth><attrdef>Coal Mine methane recovery: Sell/use, drain, or neither</attrdef><attrdefs>EIA</attrdefs></attr><attr><attrlabl Sync="TRUE">GAS_REC</attrlabl><attalias Sync="TRUE">GAS_REC</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">4</attwidth><attrdef>1= sell/use, 2=drain, 0 = neither</attrdef><attrdefs>EIA</attrdefs></attr></detailed>
+		<overview>
+		</overview>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Energy Information Administration</cntorg>
+					<cntper>Sam Limerick</cntper>
+				</cntorgp>
+				<cntpos>GIS Analyst</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>1999 Bryan St</address>
+					<address>ste 1110</address>
+					<city>Dallas</city>
+					<state>TX</state>
+					<postal>75201</postal>
+				</cntaddr>
+				<cntemail>samuel.limerick@eia.doe.gov</cntemail>
+				<cntinst>http://www.eia.doe.gov/</cntinst>
+			</cntinfo>
+		</distrib>
+		<resdesc>Downloadable Data</resdesc>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<transize>2.952</transize>
+					<dssize Sync="TRUE">0.003</dssize></digtinfo>
+			</digform>
+		</stdorder>
+	</distinfo>
+	<metainfo>
+		<metd Sync="TRUE">20071017</metd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Energy Information Administration</cntorg>
+					<cntper>Sam Limerick</cntper>
+				</cntorgp>
+				<cntpos>GIS Analyst</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>1999 Bryan St</address>
+					<address>ste 1110</address>
+					<city>Dallas</city>
+					<state>TX</state>
+					<postal>75201</postal>
+				</cntaddr>
+				<cntemail>samuel.limerick@eia.doe.gov</cntemail>
+				<cntinst>http://www.eia.doe.gov/</cntinst>
+				<cntvoice>REQUIRED: The telephone number by which individuals can speak to the organization or individual.</cntvoice></cntinfo>
+		</metc>
+		<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv>
+		<mettc Sync="TRUE">local time</mettc>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<langmeta Sync="TRUE">en</langmeta><metextns><onlink Sync="TRUE">http://www.esri.com/metadata/esriprof80.html</onlink><metprof Sync="TRUE">ESRI Metadata Profile</metprof></metextns></metainfo>
+	<Esri><CreaDate>20071017</CreaDate><CreaTime>19321100</CreaTime><SyncOnce>FALSE</SyncOnce><SyncDate>20071017</SyncDate><SyncTime>19575100</SyncTime><ModDate>20071017</ModDate><ModTime>20040900</ModTime><DataProperties><lineage><Process Name="Project_1" ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\Project" Date="20071017" Time="084015">Project C:\CoalBedMethane\2006_Update_wells_outlines\Shps_to_Distribute\unzip\CMM_2005_top100_UTM12.shp C:\CoalBedMethane\2006_Update_wells_outlines\Shps_to_Distribute\unzip\CMM_2005_top100_gN27.shp GEOGCS['GCS_North_American_1927',DATUM['D_North_American_1927',SPHEROID['Clarke_1866',6378206.4,294.9786982]],PRIMEM['Greenwich',0.0],UNIT['Degree',0.0174532925199433]] # PROJCS['NAD_1927_UTM_Zone_12N',GEOGCS['GCS_North_American_1927',DATUM['D_North_American_1927',SPHEROID['Clarke_1866',6378206.4,294.9786982]],PRIMEM['Greenwich',0.0],UNIT['Degree',0.0174532925199433]],PROJECTION['Transverse_Mercator'],PARAMETER['False_Easting',500000.0],PARAMETER['False_Northing',0.0],PARAMETER['Central_Meridian',-111.0],PARAMETER['Scale_Factor',0.9996],PARAMETER['Latitude_Of_Origin',0.0],UNIT['Meter',1.0]]</Process></lineage></DataProperties><MetaID>{AA74EC57-AE79-4EEF-9813-E75A9E91C095}</MetaID></Esri><dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.2.2.1350</envirDesc><dataLang><languageCode Sync="TRUE" value="en"></languageCode></dataLang><idCitation><resTitle Sync="TRUE">GassyCoalMinesTop100_2005</resTitle><presForm><PresFormCd Sync="TRUE" value="005"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd Sync="TRUE" value="001"></SpatRepTypCd></spatRpType><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">-110.729167</westBL><eastBL Sync="TRUE">-78.978982</eastBL><northBL Sync="TRUE">40.923173</northBL><southBL Sync="TRUE">33.279528</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">-110.729167</westBL><eastBL Sync="TRUE">-78.978982</eastBL><northBL Sync="TRUE">40.923173</northBL><southBL Sync="TRUE">33.279528</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox></dataIdInfo><mdLang><languageCode Sync="TRUE" value="en"></languageCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><distInfo><distributor><distorTran><onLineSrc><orDesc Sync="TRUE">002</orDesc><linkage Sync="TRUE">file://\\BZQA\CoalBedMethane\2006_Update_wells_outlines\Shps_to_Distribute\Use These\GassyCoalMinesTop100_2005.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc><transSize Sync="TRUE">0.003</transSize></distorTran><distorFormat><formatName Sync="TRUE">Shapefile</formatName></distorFormat></distributor></distInfo><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE">GCS_North_American_1927</identCode></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><topLvl><TopoLevCd Sync="TRUE" value="001"></TopoLevCd></topLvl><geometObjs Name="GassyCoalMinesTop100_2005"><geoObjTyp><GeoObjTypCd Sync="TRUE" value="004"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">100</geoObjCnt></geometObjs></VectSpatRep></spatRepInfo><mdDateSt Sync="TRUE">20071017</mdDateSt></metadata>

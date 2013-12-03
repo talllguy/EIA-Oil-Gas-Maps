@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE metadata SYSTEM "http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd">
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Sam Limerick</origin>
+				<pubdate>05/03/05</pubdate>
+				<title Sync="TRUE">FL_GrossFlds</title>
+				<geoform Sync="TRUE">vector digital data</geoform>
+				<ftname Sync="TRUE">FL_GrossFlds</ftname><lworkcit><citeinfo><origin>US Depts of the Interior, Agriculture &amp; Energy</origin><pubdate>2005</pubdate><title>Phase 2 EPCA Section 604 Crude Oil, Natural Gas, and Natural gas liquids proved reserves data collection, reduction, analysis and presentation</title><geoform>vector digital data</geoform></citeinfo></lworkcit><serinfo><sername>Phase 2 EPCA Section 604 Crude Oil, Natural Gas, and Natural gas liquids proved reserves data collection, reduction, analysis and presentation</sername></serinfo><onlink>\BYDA\D\MyDocs\EPCA-2\Final_Files2\FL_GrossFld.shp</onlink></citeinfo>
+		</citation>
+		<descript>
+			<abstract>Oil and Gas Field outlines from the South Florida Peninsula, with the following attributes: field name, classes of proven gross 2001 liquids, gas &amp; BOE reserves, state ,  DOE field code, fraction of each field in the basin outline (all 1 in this case).</abstract>
+			<purpose>EPCA Section 604 Round 2 Study</purpose>
+			<langdata Sync="TRUE">en</langdata></descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>05/03/2005</caldate>
+				</sngdate>
+			</timeinfo>
+			<current>publication date</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>As needed</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc Sync="TRUE">-81.777710</westbc>
+				<eastbc Sync="TRUE">-80.706520</eastbc>
+				<northbc Sync="TRUE">26.830901</northbc>
+				<southbc Sync="TRUE">25.749022</southbc>
+			</bounding>
+			<lboundng><leftbc Sync="TRUE">1024027.430481</leftbc><rightbc Sync="TRUE">1126334.411021</rightbc><bottombc Sync="TRUE">2862578.435633</bottombc><topbc Sync="TRUE">2978436.068769</topbc></lboundng></spdom>
+		<keywords>
+			<theme>
+				<themekt>None</themekt>
+				<themekey>Oil and Gas Field Outlines</themekey>
+				<themekey>Reserves of Oil &amp; Gas</themekey>
+				<themekey>EPCA</themekey>
+			</theme>
+			<place>
+				<placekt>None</placekt>
+				<placekey>Florida Peninsula</placekey>
+				<placekey>Florida</placekey></place>
+		</keywords>
+		<accconst>None.</accconst>
+		<useconst>None.</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntper>Samuel Limerick</cntper>
+					<cntorg>Z, Inc (contractor to Energy Information Administration)</cntorg>
+				</cntperp>
+				<cntpos>Geologist / GIS Analyst</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>1999 Bryan St., Ste 1100</address>
+					<city>Dallas</city>
+					<state>TX</state>
+					<postal>75201</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>(775) 825-0640</cntvoice>
+				<cntfax>(775) 825-0640</cntfax>
+				<cntemail>samuel.limerick@eia.doe.gov</cntemail>
+				<hours>7am - 4pm Pacific time</hours>
+			</cntinfo>
+		</ptcontac>
+		<secinfo>
+			<secclass>Unclassified</secclass>
+		</secinfo>
+		<native Sync="TRUE">Microsoft Windows 2000 Version 5.0 (Build 2195) Service Pack 4; ESRI ArcCatalog 8.3.0.800</native>
+		<natvform Sync="TRUE">Shapefile</natvform></idinfo>
+	<dataqual>
+		<lineage>
+			<procstep>
+				<procdesc>Build oil &amp; gas field outline polygons by buffering each well in a field and unioning the buffers.
+1. Start with point file of oil &amp; gas wells (producing wells only, no dry holes or injectors) with field name attribute "Field" and reservoir name attribute "Reservoir". Source of wells is FL state geological survey or oil &amp; gas commission and vendor (Petrodatasource). Decimate data to only include wells located in the study areas/basins.
+2. In SAS, estimate the well spacing for each oil and gas reservoir in each field. See appendix of report for detailed methodology. For each well, populate the column "Buffer" with the desired  buffer radius (ft).
+3. In ArcGIS, write VBA script to build field outline polygons. Do the following in batch mode:
+-Select "field name" attribute &amp; buffer "distance attribute" from point (well) file
+-Select all wells with first "field name" encountered
+-Create buffer around each selected well using "Buffer distance"
+-Union buffers and dissolve barriers between overlapping buffers
+-Loop through point file and perform for each "field name"
+-Perform a smoothing operation to eliminate small internal "islands" and the scalloped appearance on the outside of outlines (See report appendix for details).
+4. Calculate % of Federal land within each field outline polygon. Use federal land shapefiles provided to EIA by ARI (one shapefile/basin). Use definition query of "Minerals"= 'Fed'. (Note: all values are zero for this shapefile)
+5. Join reserve class codes to the shapefile by field name.</procdesc>
+				<proccont><cntinfo><cntperp><cntper>Sam Limerick</cntper><cntorg>Z Inc (EIA)</cntorg></cntperp><cntpos>Geologist/ GIS analyst</cntpos><cntvoice>775-825-0640</cntvoice><cntaddr><addrtype>mailing and physical address</addrtype><address>1999 Bryan St., ste 1110</address><city>Dallas</city><state>TX</state><postal>75201</postal><country>USA</country></cntaddr><cntfax>775-825-0640</cntfax><cntemail>samuel.limerick@eia.doe.gov</cntemail></cntinfo></proccont><procsv>ArcGIS 8.3</procsv></procstep>
+			<procstep>
+				<procdesc>Metadata imported.</procdesc>
+				<srcused>D:\VB_Buffer\Metadata\sep27.xml</srcused>
+			</procstep>
+			<procstep>
+				<procdesc>Metadata imported.</procdesc>
+				<srcused>D:\VB_Buffer\Metadata\sep30_1.xml</srcused>
+			</procstep>
+			<procstep>
+				<procdesc>Dataset copied.</procdesc>
+				<srcused>\\BYDA\D$\VB_Buffer\Rockies_Feet.mdb</srcused>
+			</procstep>
+			<procstep>
+				<procdesc>Dataset moved.</procdesc>
+				<srcused>D:\VB_Buffer\Sep30_GrossOutlines1</srcused>
+			</procstep>
+			<procstep>
+				<procdesc>Dataset copied.</procdesc>
+				<srcused>D:\VB_Buffer\Sep30_Nearfinals\Sep30_GrossOutlines1</srcused>
+			</procstep>
+			<procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">D:\MyDocs\EPCA-2\Final_Files\EPCA1_gross.xml</srcused><date Sync="TRUE">20041028</date><time Sync="TRUE">14194600</time></procstep><procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">D:\MyDocs\EPCA-2\Final_Files\WTB_GrossFld.shp.xml</srcused><date Sync="TRUE">20041109</date><time Sync="TRUE">07471600</time></procstep><procstep><procdesc Sync="TRUE">Dataset moved.</procdesc><srcused Sync="TRUE">D:\MyDocs\EPCA-2\Final_Files\FL_GrossFlds</srcused><date Sync="TRUE">20041110</date><time Sync="TRUE">10323800</time></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">D:\MyDocs\EPCA-2\Final_Files\Shapefiles\FL_GrossFlds</srcused><date Sync="TRUE">20050429</date><time Sync="TRUE">11092400</time></procstep></lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct Sync="TRUE">Vector</direct>
+		<ptvctinf>
+			<sdtsterm Name="FL_GrossFlds">
+				<sdtstype Sync="TRUE">G-polygon</sdtstype>
+				<ptvctcnt Sync="TRUE">21</ptvctcnt>
+			</sdtsterm>
+			<esriterm Name="FL_GrossFlds"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Polygon</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">21</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<planar>
+				<planci>
+					<plance Sync="TRUE">coordinate pair</plance>
+					<coordrep>
+						<absres Sync="TRUE">0.000256</absres>
+						<ordres Sync="TRUE">0.000256</ordres>
+					</coordrep>
+					<plandu Sync="TRUE">meters</plandu>
+				</planci>
+				<gridsys><gridsysn Sync="TRUE">Universal Transverse Mercator</gridsysn><utm><utmzone Sync="TRUE">16</utmzone><transmer><sfctrmer Sync="TRUE">0.999600</sfctrmer><longcm Sync="TRUE">-87.000000</longcm><latprjo Sync="TRUE">0.000000</latprjo><feast Sync="TRUE">500000.000000</feast><fnorth Sync="TRUE">0.000000</fnorth></transmer></utm></gridsys></planar>
+			<geodetic>
+				<horizdn Sync="TRUE">North American Datum of 1927</horizdn>
+				<ellips Sync="TRUE">Clarke 1866</ellips>
+				<semiaxis Sync="TRUE">6378206.400000</semiaxis>
+				<denflat Sync="TRUE">294.978698</denflat>
+			</geodetic>
+			<cordsysn><geogcsn Sync="TRUE">GCS_North_American_1927</geogcsn><projcsn Sync="TRUE">NAD_1927_UTM_Zone_16N</projcsn></cordsysn></horizsys>
+	</spref>
+	<eainfo>
+		<detailed Name="FL_GrossFlds">
+			<enttyp>
+				<enttypl Sync="TRUE">FL_GrossFlds</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">21</enttypc><enttypd>Gross oil &amp; gas field outlines for the Florida Peninsula</enttypd></enttyp>
+			<attr>
+				<attrlabl Sync="TRUE">FID</attrlabl>
+				<attrdef Sync="TRUE">Internal feature number.</attrdef>
+				<attrdefs Sync="TRUE">ESRI</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape</attrlabl>
+				<attrdef Sync="TRUE">Feature geometry.</attrdef>
+				<attrdefs Sync="TRUE">ESRI</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Coordinates defining the features.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">field</attrlabl>
+				<attrdef>Oil/gas field name</attrdef>
+				<attrdomv>
+					<udom>Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">field</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">30</attwidth><attrdefs>EIA field code master list</attrdefs></attr>
+			<attr>
+				<attrlabl Sync="TRUE">ObjectID</attrlabl>
+				<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">ObjectID</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth><attrdef>Object #</attrdef></attr>
+			<attr>
+				<attrlabl Sync="TRUE">PctFedLand</attrlabl>
+				<attrdef>Fraction of federal land within field outline (federal land area/ total area; range 0-1)</attrdef>
+				<attalias Sync="TRUE">PctFedLand</attalias><attrtype Sync="TRUE">Float</attrtype><attwidth Sync="TRUE">19</attwidth><atnumdec Sync="TRUE">11</atnumdec><attrdefs>EIA</attrdefs></attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape_Leng</attrlabl>
+				<attrdef>Length of feature in internal units</attrdef>
+				<attalias Sync="TRUE">Shape_Leng</attalias><attrtype Sync="TRUE">Float</attrtype><attwidth Sync="TRUE">19</attwidth><atnumdec Sync="TRUE">11</atnumdec><attrdefs>ESRI</attrdefs></attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape_Area</attrlabl>
+				<attrdef Sync="TRUE">Area of feature in internal units squared.</attrdef>
+				<attrdefs Sync="TRUE">ESRI</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Positive real numbers that are automatically generated.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">Shape_Area</attalias><attrtype Sync="TRUE">Float</attrtype><attwidth Sync="TRUE">19</attwidth><atnumdec Sync="TRUE">11</atnumdec></attr>
+			<attr>
+				<attrlabl Sync="TRUE">STATE</attrlabl>
+				<attrdef>US State abbreviation</attrdef>
+				<attrdomv>
+					<udom>Positive real numbers that are automatically generated.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">STATE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">5</attwidth></attr>
+			<attr>
+				<attrlabl Sync="TRUE">LIQRES_CLA</attrlabl>
+				<attrdefs>EIA</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>Class for ranges of Federal Liquid reserves (Thousands of barrels=MBO)</edomv>
+						<edomvd>Class 0=0 MBO, class 1=0-10, 2=10-100, 3=100-1000, 4=1000-10000, 5= Greater than 10000</edomvd>
+						<edomvds>EIA</edomvds>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">LIQRES_CLA</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth><attrdef>2001 proved liquids reserve class: If liquids reserves (LR) =0 MBL then LIQRES_CL=0; if LR &gt; 0 MBL and LR &lt;/= 10 MBL then LIQRES_CL=1; if LR &gt; 10 MBL and LR &lt;/=  100 MBL then LIQRES_CL=2; if LR &gt; 100 MBL and LR &lt;/= 1000 MBL then LIQRES_CL=3; if LR &gt; 1000 MBL and LR &lt;/= 10,000 MBL then LIQRES_CL=4; if LR &gt; 10,000 MBL and LR &lt;/= 100,000 MBL then LIQRES_CL=5</attrdef></attr>
+			<attr>
+				<attrlabl Sync="TRUE">GASRES_CLA</attrlabl>
+				<attrdef>2001 proved gas reserve class: If gas reserves(GR) =0 MMCFG then GASRES_CL=0; if GR &gt; 0 MMCFG and GR &lt;/= 10 MMCFG then GASRES_CL=1; if GR &gt; 10 MMCFG and GR &lt;/= 100 MMCFG then GASRES_CL=2; if GR &gt; 100 MMCFG and GR &lt;/= 1000 MMCFG then GASRES_CL=3; if GR &gt; 1000 MMCFG and GR &lt;/= 10,000 MMCFG then GASRES_CL=4; if GR &gt; 10,000 MMCFG and GR &lt;/= 100,000 MMCFG then GASRES_CL=5; if GR &gt; 100,000 MMCFG then GASRES_CL=6</attrdef>
+				<attrdefs>EIA</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>Class for ranges of Federal Oil reserves (Thousands of barrels=MBO)</edomv>
+						<edomvd>Class 0=0 MBO, 1=0-10, 2=10-100, 3=100-1000, 4=1000-10000, 5= greater than 10000</edomvd>
+						<edomvds>EIA</edomvds>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">GASRES_CLA</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">10</attwidth></attr>
+			<attr>
+				<attrlabl Sync="TRUE">BOERES_CLA</attrlabl>
+				<attrdef>2001 proved BOE reserves class: If BOE reserves (BR) =0 MBOE then OERES_CL=0; if BR &gt; 0 MBOE and BR &lt;/= 10 MBOE then BOERES_CL=1; if BR &gt; 10 MBOE and BR &lt;/=  100 MBOE then BOERES_CL=2; if BR &gt; 100 MBOE and BR &lt;/= 1000 MBOE then BOERES_CL=3; if BR &gt; 1000 MBOE and BR &lt;/= 10,000 MBOE then BOERES_CL=4; if BR &gt; 10,000 MBOE and BR &lt;/= 100,000 MBOE then BOERES_CL=5; if BR &gt; 100,000 MBOE then BOERES_CL=6</attrdef>
+				<attrdefs>EIA</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>Class for ranges of Federal gas reserves (Millions of cubic feet of gas=MMCFG)</edomv>
+						<edomvd>Class 0=0 MMCFG, 1=0-10, 2=10-100, 3=100-1000, 4=1000-10,000, 5= 10,000-100,000, 6= Greater than 100,000</edomvd>
+						<edomvds>EIA</edomvds>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">BOERES_CLA</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">10</attwidth></attr>
+			<attr>
+				<attrlabl Sync="TRUE">FLDCD_DOE</attrlabl>
+				<attrdef>EIA field code</attrdef>
+				<attrdefs>EIA field code master list</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>Class for ranges of Federal oil+gas reservesin BOE units (Thousands of barrels of oil equivalent =MBOE)</edomv>
+						<edomvd>Class 0=0 MBOE, 1=0-10, 2=10-100, 3=100-1000, 4=1000-10,000, 5= 10,000-100,000, 6= Greater than 100,000</edomvd>
+						<edomvds>EIA</edomvds>
+					</edom>
+				</attrdomv>
+				<attalias Sync="TRUE">FLDCD_DOE</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth></attr>
+			<attr><attrlabl Sync="TRUE">INBAS_FRC</attrlabl><attrdef>Fraction of total gross field outline that is inside the EPCA-2 basin boundary</attrdef><attrdefs>EIA</attrdefs><attalias Sync="TRUE">INBAS_FRC</attalias><attrtype Sync="TRUE">Float</attrtype><attwidth Sync="TRUE">19</attwidth><atnumdec Sync="TRUE">11</atnumdec></attr></detailed>
+	</eainfo>
+	<distinfo>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<transize>5.511</transize>
+					<dssize Sync="TRUE">0.046</dssize></digtinfo>
+			</digform>
+		</stdorder>
+		<resdesc Sync="TRUE">Downloadable Data</resdesc></distinfo>
+	<metainfo>
+		<metd Sync="TRUE">20050504</metd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Z, Inc. (Energy Information Administration)</cntorg>
+					<cntper>Sam Limerick</cntper>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailing address</addrtype>
+					<city>Dallas</city>
+					<state>TX</state>
+					<postal>75201</postal>
+					<address>1999 Bryan St., Ste 1110</address><country>USA</country></cntaddr>
+				<cntvoice>775-825-0640</cntvoice>
+				<cntpos>Geologist / GIS Analyst</cntpos><cntemail>samuel.limerick@eia.doe.gov</cntemail><hours>7 AM - 4 PM Pacific time</hours></cntinfo>
+		</metc>
+		<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv>
+		<mettc Sync="TRUE">local time</mettc>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<langmeta Sync="TRUE">en</langmeta><metextns><onlink Sync="TRUE">http://www.esri.com/metadata/esriprof80.html</onlink><metprof Sync="TRUE">ESRI Metadata Profile</metprof></metextns></metainfo>
+	<Esri><CreaDate>20050429</CreaDate><CreaTime>11092400</CreaTime><SyncOnce>FALSE</SyncOnce><SyncDate>20050504</SyncDate><SyncTime>11123900</SyncTime><ModDate>20050504</ModDate><ModTime>11131800</ModTime><MetaID>{207128BF-38E3-4BB5-812A-F54B5C5DA6AE}</MetaID></Esri><dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows 2000 Version 5.0 (Build 2195) Service Pack 4; ESRI ArcCatalog 8.3.0.800</envirDesc><dataLang><languageCode Sync="TRUE" value="en"></languageCode></dataLang><idCitation><resTitle Sync="TRUE">FL_GrossFlds</resTitle><presForm><PresFormCd Sync="TRUE" value="005"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd Sync="TRUE" value="001"></SpatRepTypCd></spatRpType><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">1024027.430481</westBL><eastBL Sync="TRUE">1126334.411021</eastBL><northBL Sync="TRUE">2978436.068769</northBL><southBL Sync="TRUE">2862578.435633</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">-81.77771</westBL><eastBL Sync="TRUE">-80.70652</eastBL><northBL Sync="TRUE">26.830901</northBL><southBL Sync="TRUE">25.749022</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox></dataIdInfo><mdLang><languageCode Sync="TRUE" value="en"></languageCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><distInfo><distributor><distorTran><onLineSrc><orDesc Sync="TRUE">002</orDesc><linkage Sync="TRUE">file://\\BYDA\D$\MyDocs\EPCA-2\Final_Files2\shapefiles\FL_GrossFlds.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc><transSize Sync="TRUE">0.046</transSize></distorTran><distorFormat><formatName Sync="TRUE">Shapefile</formatName></distorFormat></distributor></distInfo><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE">NAD_1927_UTM_Zone_16N</identCode></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><topLvl><TopoLevCd Sync="TRUE" value="001"></TopoLevCd></topLvl><geometObjs Name="FL_GrossFlds"><geoObjTyp><GeoObjTypCd Sync="TRUE" value="001"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">21</geoObjCnt></geometObjs></VectSpatRep></spatRepInfo><mdDateSt Sync="TRUE">20050504</mdDateSt></metadata>
